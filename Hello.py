@@ -1,7 +1,7 @@
 import datetime
 
 
-def hello_xy(name: str = "asd"):
+def hello_xy():
     name = input("What is your name?")
     if name == "Dani":
         print(f"Hello {name}")
