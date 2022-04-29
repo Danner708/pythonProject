@@ -2,8 +2,8 @@
 Module is not for import
 """
 
-class MainClass:
 
+class MainClass:
     class_variable: str = "default value"
 
     def __int__(self, class_variable: str = "default argument"):
