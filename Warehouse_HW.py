@@ -15,13 +15,15 @@ def menu(warehouse):
     :return:
     """
     while True:
-        chose_option = input("Válassz egy menűpontot:\n1 - Termék hozzáadása/frissítése \n2 - Termék törlése \n3"
-                             " - Kilépés\nVálassz egy menupontot: ")
+        chose_option = input("Válassz egy menűpontot:\n1 - Termék hozzáadása/frissítése \n2 - Termék törlése "
+                             "\n3 - Terméklista \n4 - Kilépés\nVálassz egy menupontot: ")
         if chose_option == "1":
             add_update_product(warehouse)
         elif chose_option == "2":
             delete_product(warehouse)
         elif chose_option == "3":
+            list_product(warehouse)
+        elif chose_option == "4":
             exit_program()
 
 
@@ -72,6 +74,18 @@ def delete_product(warehouse):
         print(f"Sikeres törlés!\n {product_to_delete} törölve.\n" + "*" * 50)
     except:
         print("Sikertelen törlés!\n Nincs ilyen termék!\n" + "*" * 50)
+
+
+def list_product(warehouse):
+    """
+    List of products
+    :return:
+    """
+    print("*" * 50 + "\nVálasztott menu: Terméklista")
+    print("Ezek a termékek találhatóak az áruházban!")
+    for i in warehouse:
+        print(str(i) + ": " + str(warehouse[i]) + "Ft.")
+    print("*" * 50)
 
 
 def exit_program():
