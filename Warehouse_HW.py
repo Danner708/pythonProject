@@ -16,7 +16,7 @@ def menu(warehouse):
     """
     while True:
         chose_option = input("Válassz egy menűpontot:\n1 - Termék hozzáadása/frissítése \n2 - Termék törlése \n3"
-                             " - Kilépés")
+                             " - Kilépés\nVálassz egy menupontot: ")
         if chose_option == "1":
             add_update_product(warehouse)
         elif chose_option == "2":
