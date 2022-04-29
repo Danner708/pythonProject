@@ -4,7 +4,7 @@ def main():
     :return:
     """
     print("Üdvözöllek az oldalon!")
-    warehouse = create_wherehouse()
+    warehouse = create_warehouse()
     menu(warehouse)
 
 
@@ -15,14 +15,14 @@ def menu(warehouse):
     :return:
     """
     while True:
-        chose_option = input("Válassz egy menűpontot:\n1 - Termék hozzáadása/frissítése \n2 -Termék törlése \n3"
-                             "-Kilépés")
+        chose_option = input("Válassz egy menűpontot:\n1 - Termék hozzáadása/frissítése \n2 - Termék törlése \n3"
+                             " - Kilépés")
         if chose_option == "1":
             add_update_product(warehouse)
         elif chose_option == "2":
             delete_product(warehouse)
         elif chose_option == "3":
-            exit_program(warehouse)
+            exit_program()
 
 
 def create_warehouse():
