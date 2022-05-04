@@ -1,7 +1,7 @@
-from add_update_product import AddUpdateProduct
-from delete_product import DeleteProduct
-from list_product import ListProduct
-from exit_program import ExitProgram
+from .add_update_product import AddUpdateProduct
+from .delete_product import DeleteProduct
+from .list_product import ListProduct
+from .exit_program import ExitProgram
 
 
 class Menu:
