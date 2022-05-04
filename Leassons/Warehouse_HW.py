@@ -51,10 +51,10 @@ def add_update_product(warehouse):
         try:
             product_value = int(input("Kérlek adj meg egy értéket a terméknek: "))
         except ValueError:
-            print("Az értéknek számnak kell lennie:\n" + "*" * 50)
+            print("Az értéknek számnak kell lennie!\n" + "*" * 50)
             continue
         if type(product_value) != int:
-            print("Az értéknek számnak kell lennie:\n" + "*" * 50)
+            print("Az értéknek számnak kell lennie!\n" + "*" * 50)
             product_value = input("Kérlek adj meg egy értéket a terméknek: ")
         else:
             print(f"Sikeres hozzáadás!\n Az új termék: {product_name} és az értéke: {product_value}\n"

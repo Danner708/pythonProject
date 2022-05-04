@@ -6,7 +6,7 @@ def hello_xy():
     if name == "Dani":
         print(f"Hello {name}")
     else:
-        print("I don't know you!")
+        print(f"I don't know you! {name}")
 
 
 hello_xy()
