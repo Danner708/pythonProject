@@ -1,13 +1,13 @@
-from .add_update_product import AddUpdateProduct
+from .add_update_product import AddOrUpdate
 from .delete_product import DeleteProduct
 from .list_product import ListProduct
 from .exit_program import ExitProgram
 
 
-class Menu:
+class MainMenu:
 
     @staticmethod
-    def menu(warehouse):
+    def selector():
         """
         Menu of the warehouse
         :param warehouse:
@@ -17,10 +17,14 @@ class Menu:
             chose_option = input("Válassz egy menűpontot:\n1 - Termék hozzáadása/frissítése \n2 - Termék törlése "
                                  "\n3 - Terméklista \n4 - Kilépés\nVálassz egy menupontot: ")
             if chose_option == "1":
-                AddUpdateProduct.add_update_product(warehouse)
+                add = AddOrUpdate()
+                add.create_or_update_product()
             elif chose_option == "2":
-                DeleteProduct.delete_product(warehouse)
+                delete = DeleteProduct()
+                delete.delete_product()
             elif chose_option == "3":
-                ListProduct.list_product(warehouse)
+                ListProduct.list_products()
             elif chose_option == "4":
                 ExitProgram.exit_program()
+            else:
+                print("Nem megfelelő érteék!\n" + "*" * 50)

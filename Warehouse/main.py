@@ -1,7 +1,7 @@
-from Moduls.menu import Menu
-from Moduls.create_warehouse import WareHouse
+from Moduls.main_menu import MainMenu
 
 if __name__ == "__main__":
     print("Üdvözöllek az oldalon!")
-    warehouse = WareHouse.create_warehouse()
-    Menu.menu(warehouse)
+
+    MainMenu.selector()
+1
