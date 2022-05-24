@@ -1,7 +1,7 @@
-from .add_update_product import AddOrUpdate
-from .delete_product import DeleteProduct
-from .list_product import ListProduct
-from .exit_program import ExitProgram
+from Warehouse.Moduls.add_update_product import AddOrUpdate
+from Warehouse.Moduls.delete_product import DeleteProduct
+from Warehouse.Moduls.exit_program import ExitProgram
+from Warehouse.Moduls.list_product import ListProduct
 
 
 class MainMenu:

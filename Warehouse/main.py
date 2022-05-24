@@ -4,4 +4,3 @@ if __name__ == "__main__":
     print("Üdvözöllek az oldalon!")
 
     MainMenu.selector()
-1
